@@ -19,6 +19,6 @@ WORKDIR /node/app
 
 COPY . .
 
-ENTRYPOINT ["/sbin/tini", "--"]
+# ENTRYPOINT ["/sbin/tini", "--"]
 
 CMD ["node", "app.js"]
