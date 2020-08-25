@@ -19,10 +19,11 @@ services:
       - redis
 
   result:
-    build: 
+    build:
       context: .
+      target: dev
     ports:
-      - '5001:80'
+      - '5001:8080'
     volumes:
       - .:/app
     environment:
